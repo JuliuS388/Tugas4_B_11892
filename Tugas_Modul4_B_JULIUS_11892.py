@@ -49,8 +49,8 @@ if uploaded_file is not None:
 
     model_directory = 
         r'AGG_model.pkl',
-        r'KMeans_model.pkl',
-        r'DBSCAN_model.pkl'
+        'KMeans_model.pkl',
+        'DBSCAN_model.pkl'
 
     models = {}
 
