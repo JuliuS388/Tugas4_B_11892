@@ -9,7 +9,7 @@ import plotly.graph_objects as go #digunakan untuk membuat grafik
 
 
 def scatter(model, model_name, data, new_point, features, color_scale, title):
-    clusters = model.fit_predict(data[features]) #untuk memprediksi cluster untuk setiap titik pada data menggunakan model
+    clusters = model.fit_predict(data[features]) 
     data[f"{model_name}_Cluster"] = clusters
 
     if model_name == "KMeans_model":
@@ -47,12 +47,10 @@ if uploaded_file is not None:
     st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - JULIUS</h1>", unsafe_allow_html=True)
     st.dataframe(input_data)
 
-    model_directory = r'C:\Users\LENOVO LEGION\Videos\Tugas4_B_11892'
-    model_path = {
-        "AGG_model" : os.path. join(model_directory, r'AGG_model.pkl'),
-        "KMeans_model" : os.path.join(model_directory, r'KMeans_model.pkl'),
-        "DBSCAN_model" : os.path. join(model_directory, r'DBSCAN_model.pkl'),
-    }
+    model_directory = 
+        r'AGG_model.pkl',
+        r'KMeans_model.pkl',
+        r'DBSCAN_model.pkl'
 
     models = {}
 
